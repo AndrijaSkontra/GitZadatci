@@ -7,7 +7,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="formdev.flatlaf" level="project" />
-    <orderEntry type="library" exported="" name="miglayout.swing" level="project" />
   </component>
 </module>
