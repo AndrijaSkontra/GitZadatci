@@ -36,6 +36,16 @@ public class MainFrame extends JFrame {
                 }
             }
         });
+
+        viewPanel.setViewListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                boolean dataButtonPressed = viewPanel.getDataButton() == e.getSource();
+                if (dataButtonPressed) {
+                    viewPanel.updateTable(manageDataBase.getProgrammers());
+                }
+            }
+        });
     }
 
     private Programmer buildAProgrammer() {

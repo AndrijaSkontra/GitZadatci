@@ -63,8 +63,9 @@ public class ManageDataBase {
         }
     }
 
-    public void getProgrammers() {
+    public ArrayList<Programmer> getProgrammers() {
         String sql = "SELECT * FROM programmers";
+        var programmers = new ArrayList<Programmer>();
 
         try (Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(sql)) {
@@ -75,10 +76,17 @@ public class ManageDataBase {
                 String bestLanguage = resultSet.getString("best_language");
                 String workingTime = resultSet.getString("working_time");
 
-                System.out.println(firstName + " " + lastName + " " + bestLanguage + " " + workingTime);
+                Programmer programmer = new Programmer.Builder()
+                        .withFirstName(firstName)
+                        .withLastName(lastName)
+                        .withBestLanguage(bestLanguage)
+                        .withWorkingTime(workingTime)
+                        .build();
+                programmers.add(programmer);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return programmers;
     }
 }

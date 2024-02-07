@@ -56,4 +56,15 @@ public class Programmer {
             return new Programmer(this);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Programmer{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", bestLanguage='" + bestLanguage + '\'' +
+                ", experiencedIn=" + experiencedIn +
+                ", workingTime='" + workingTime + '\'' +
+                '}';
+    }
 }
