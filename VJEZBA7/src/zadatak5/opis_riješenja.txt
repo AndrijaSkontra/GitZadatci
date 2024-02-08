@@ -1,0 +1,2 @@
+Da bi riješili problem koristit ću principe Interface
+segregation i Dependency inversion.
