@@ -1,0 +1,2 @@
+Uprimjeru bio je narušen LSP. Metodom dodavanja interface-a za Apprentice, te interface-a
+za Master-a koji ujedno extends IApprentice(Zato što i Master može tražiti savjet!) riješili smo problem.
