@@ -1,6 +1,0 @@
-Zadatak se može riješiti koristeći SOLID principa,
-posebno Open-Closed Principle (OCP) i Interface Segregation
-Principle (ISP).
-
-Napravit ćemo interface Booking i interface Payment(ISP) o kojem će ovisiti
-class-a User(Ovo je također primjer Dependency Inversion Principle (DIP)).
