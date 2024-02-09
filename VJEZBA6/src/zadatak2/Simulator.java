@@ -11,5 +11,6 @@ public class Simulator {
         ship = shipFactory.createShip();
         System.out.println(ship.getDescription());
         System.out.println(ship.sail());
+        System.out.println("Done");
     }
 }
