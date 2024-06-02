@@ -1,3 +1,4 @@
+AI generated READ.ME :)
 # Rješenja zadataka iz predmeta Napredno Objektno Programiranje
 
 Dobrodošli u repozitorij s rješenjima zadataka iz vježbi Naprednog Objektnog Programiranja! Ovdje možete pronaći implementacije zadataka, uz komentare i objašnjenja.
